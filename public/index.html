@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jersyfi Dev</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#3b49df">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="h-screen w-screen flex justify-center bg-cover bg-no-repeat bg-center bg-[url(./assets/development.jpg)]">
+        <div class="grid content-center">
+            <div class="text-center">
+                <img class="mb-4 w-[300px]" src="./assets/Jersyfi-DEV.svg" alt="PrHO Logo">
+            </div>
+        </div>
+    </div>
+
+    <footer class="absolute bottom-0 right-0 left-0 flex justify-center mb-4 md:mb-8">
+        <div class="text-center">
+            <p class="mb-2 text-gray-500 text-sm">©<span id="year"></span> Jersyfi</p>
+            <a href="https://jersyfi.de">
+                <img class="w-[128px] h-[32px]" src="./assets/JERSYFI.svg" alt="Jersyfi Logo">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const yearElem = document.getElementById('year')
+
+        yearElem.innerText = new Date().getFullYear()
+    </script>
+</body>
+</html>
